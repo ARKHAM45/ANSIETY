@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendiendo la Ansiedad</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1, h2 {
+            color: #336699;
+        }
+        h2 {
+            border-bottom: 2px solid #336699;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul {
+            list-style-type: disc;
+            margin-bottom: 15px;
+            margin-left: 20px;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        /* Estilos para botones y enlaces */
+        .button {
+            display: inline-block;
+            background-color: #336699;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .button:hover {
+            background-color: #265985;
+        }
+        /* Estilos para iconos */
+        .icon {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #336699;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        /* Estilos para enlaces de navegación */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        nav li {
+            margin-right: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #336699;
+            padding: 10px;
+            transition: color 0.3s ease;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #336699;
+            color: #fff;
+        }
+        /* Estilos para citas */
+        blockquote {
+            margin: 0;
+            padding: 10px 20px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #336699;
+            margin-bottom: 15px;
+        }
+        blockquote p {
+            margin: 0;
+        }
+        /* Estilos para contenido específico */
+        .tips {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-top: 20px;
+            border-left: 5px solid #336699;
+        }
+        .tips h3 {
+            color: #336699;
+            margin-top: 0;
+        }
+        .tips ul {
+            list-style-type: square;
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+        .tips p {
+            margin-bottom: 10px;
+        }
+        .tips p:last-child {
+            margin-bottom: 0;
+        }
+        /* Estilos adicionales para secciones específicas */
+        .extra-info {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        .extra-info h3 {
+            color: #336699;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        .extra-info ul {
+            list-style-type: circle;
+            margin-left: 30px;
+            padding-left: 10px;
+        }
+        .extra-info li {
+            margin-bottom: 10px;
+        }
+        .extra-info p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        /* Estilos para contenido adicional */
+        .more-content {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        .more-content h3 {
+            color: #336699;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        .more-content ul {
+            list-style-type: circle;
+            margin-left: 30px;
+            padding-left: 10px;
+        }
+        .more-content li {
+            margin-bottom: 10px;
+        }
+        .more-content p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        /* Estilos para secciones de contacto */
+        .contact-section {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        .contact-section h3 {
+            color: #336699;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        .contact-section p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        .contact-section ul {
+            list-style-type: circle;
+            margin-left: 30px;
+            padding-left: 10px;
+        }
+        .contact-section li {
+            margin-bottom: 10px;
+        }
+        /* Estilos para secciones de recursos adicionales */
+        .resources-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        .resources-section h3 {
+            color: #336699;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        .resources-section ul {
+            list-style-type: circle;
+            margin-left: 30px;
+            padding-left: 10px;
+        }
+        .resources-section li {
+            margin-bottom: 10px;
+        }
+        .resources-section p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        /* Estilos para secciones de síntomas */
+        .symptoms-section {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        .symptoms-section h3 {
+            color: #336699;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        .symptoms-section p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        .symptoms-section ul {
+            list-style-type: circle;
+            margin-left: 30px;
+            padding-left: 10px;
+        }
+        .symptoms-section li {
+            margin-bottom: 10px;
+        }
+        /* Estilos para secciones de tratamientos */
+        .treatments-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        .treatments-section h3 {
+            color: #336699;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        .treatments-section ul {
+            list-style-type: circle;
+            margin-left: 30px;
+            padding-left: 10px;
+        }
+        .treatments-section li {
+            margin-bottom: 10px;
+        }
+        /* Estilos para secciones de factores de riesgo */
+        .risk-factors-section {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
